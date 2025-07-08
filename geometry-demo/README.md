@@ -7,22 +7,22 @@ Geometry Demo serves as a practice project to better understand how to create re
 Follow the below steps to use the github to install this package.
 
 1. Clone this git repo through `git clone <repo_name>`
-2. Import all wanted packages through `import geometry-demo`
+2. Make sure you are in the geometry demo folder. Install packages through `pip install -e .`
+3. Import all wanted packages through `import geometry-demo`
 
 
 ## Usage
 
 ```python
-import foobar
+from geometry import *
 
-# returns 'words'
-foobar.pluralize('word')
+# create a shape
+circle = Circle(radius = 5)
+# get area
+print(circle.area())
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+# get area stats
+print(area_stats(circle))
 ```
 
 ## Contributing
