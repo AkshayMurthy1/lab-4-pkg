@@ -1,13 +1,13 @@
 # Geometry Demo
 
-Geometry Demo serves as a practice project to better understand how to create reproducible packages that are user-friendly. It aids in solving high school level geometry problems and tasks with an OOP structure.
+Geometry Demo serves as a practice project to better understand how to create reproducible packages that are user-friendly. It aids in solving high school level geometry problems, involving area and stats about various area shapes and tasks with an OOP structure.
 
 ## Installation
 
 Follow the below steps to use the github to install this package.
 
 1. Clone this git repo through `git clone <repo_name>`
-2. Make sure you are in the geometry demo folder. Install packages through `pip install -e .`
+2. Make sure you are in the geometry-demo folder. Install packages through `pip install -e .`
 3. Import all wanted packages through `import geometry-demo`
 
 
