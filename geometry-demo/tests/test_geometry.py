@@ -1,6 +1,5 @@
 import pytest
-from geometry.shapes import * 
-from geometry.utils import *
+from geometry import *
 import math
 
 def test_circle_area_zero_and_positive():
@@ -18,6 +17,22 @@ def test_square_area_zero_and_positive():
  side_lengths = [0,4,5]
  for sl in side_lengths:
   assert Square(sl).area() == sl**2
+
+def test_square_area_zero_and_positive():
+ # Arrange: choose side lengths
+ # Act: compute areas
+ # Assert: use pytest.approx to compare with expected
+ side_lengths = [0,4,5]
+ for sl in side_lengths:
+  assert Square(sl).area() == sl**2
+
+def test_rectangle_area_zero_and_positive():
+ # Arrange: choose side lengths
+ # Act: compute areas
+ # Assert: use pytest.approx to compare with expected
+ side_lengths = [[0,0],[1,4],[2,5]]
+ for height,width in side_lengths:
+  assert Rectangle(height,width).area() == height*width
 
 def test_stats_keys_and_values():
  # Arrange: create several shapes
